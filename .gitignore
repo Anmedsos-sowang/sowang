@@ -2,3 +2,5 @@
 .venv/
 .env.*
 !.env.example
+
+data/raw/

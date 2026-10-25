@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 
-import collect_config as C  # scripts/ otomatis ada di sys.path saat dijalankan langsung
+import config as C  # scripts/ otomatis ada di sys.path saat dijalankan langsung
 
 
 # =====================================================================
@@ -139,6 +139,12 @@ def plan_group(idx: int, quota: int, start: datetime, end: datetime, month: str
         cells.append(Cell(f"{g['name']}|{iso(s)}|{iso(main_end)}", g["name"],
                           build_query(idx), s, main_end, q))
     return cells, spare
+
+
+def spread_order(n: int) -> list[int]:
+    """Urutan sel deterministik (bit-reversal): awalan urutan mana pun tersebar merata sepanjang bulan."""
+    bits = max(1, (n - 1).bit_length())
+    return [r for r in (int(format(i, f"0{bits}b")[::-1], 2) for i in range(1 << bits)) if r < n]
 
 
 def plan_fill(idx: int, shortfall: int, spare: list[tuple[datetime, datetime]], month: str) -> list[Cell]:
@@ -341,7 +347,14 @@ class Store:
     def save_ck(self) -> None:
         tmp = self.ck_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(self.ck, indent=1), encoding="utf-8")
-        tmp.replace(self.ck_path)
+        for attempt in range(8):
+            try:
+                tmp.replace(self.ck_path)
+                return
+            except PermissionError:
+                if attempt == 7:
+                    raise
+                time.sleep(0.3 * (attempt + 1))   # tunggu kunci dilepas, lalu coba lagi
 
     def allowed_posts(self) -> int:
         """Sisa post yang masih boleh ditagih menurut budget lokal."""
@@ -352,7 +365,7 @@ class Store:
         """None bila post layak disimpan; selain itu alasan penolakan."""
         if t["id"] in self.ids:
             return "dup_id"
-        if t.get("lang", C.LANG) != C.LANG:
+        if t.get("lang", C.LANG) not in C.ACCEPTED_LANG_CODES:
             return "bad_lang"
         if C.DEDUP_NORMALIZED_TEXT:
             k = norm_text(t["text"])
@@ -437,8 +450,12 @@ def fetch_cell(client: XClient, store: Store, cell: Cell, target: int) -> None:
         store.ck["meta"]["billed_posts"] += len(returned)  # ditagih per post yang dikembalikan
 
         rows = []
+        residual = any(g["name"] == cell.group and g["share"] is None for g in C.GROUPS)
         for t in returned:
-            if len(rows) >= need:
+            if residual:
+                if store.count >= target:
+                    break
+            elif len(rows) >= need:
                 break
             why = store.check(t)
             if why:
@@ -511,6 +528,8 @@ def write_ids(store: Store) -> None:
 # Main
 # =====================================================================
 def main() -> int:
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description="Fetch post X (full-archive) untuk riset parenting.")
     ap.add_argument("--month", default=C.DEFAULT_MONTH, help="YYYY-MM (default: %(default)s)")
     ap.add_argument("--target", type=int, default=C.TARGET_PER_MONTH, help="jumlah post unik")
@@ -553,7 +572,7 @@ def main() -> int:
         posts = data.get("data", [])
         log(f"OK: {len(posts)} post, ~${len(posts) * C.PRICE_PER_POST:.2f}. "
             f"Sisa kuota rate: {client.last_headers.get('x-rate-limit-remaining')}")
-        for t in posts[:3]:
+        for t in posts:
             print(f"  - {t['created_at']} [{t.get('lang')}] {t['text'][:100]!r}")
         return 0
 
@@ -590,6 +609,7 @@ def main() -> int:
             store.save_ck()
         log(f"Kelompok spesifik terkumpul {store.count}; target '{umum_name}' = {meta['umum_target']}")
         cells, spare = plan_group(umum_idx, meta["umum_target"], start, period_end, month)
+        cells = [cells[i] for i in spread_order(len(cells))]
         for c in cells:
             fetch_cell(client, store, c, target)
 
