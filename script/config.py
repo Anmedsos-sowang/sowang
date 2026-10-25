@@ -43,7 +43,7 @@ CSV_COLUMNS = [
 # karena duplikat/kelebihan. Cek harga terbaru di Developer Console.
 # ---------------------------------------------------------------------
 PRICE_PER_POST = 0.005                   # USD per post read
-BUDGET_USD = 3.90                        # script berhenti sebelum melewati ini
+BUDGET_USD = 3.80                        # script berhenti sebelum melewati ini
 SPENT_BEFORE_USD = 0.0                   # pemakaian sebelumnya (bulan lain/uji coba), isi dari Console
 
 # ---------------------------------------------------------------------
