@@ -1,5 +1,5 @@
 """
-collect_config.py - Semua konfigurasi pengumpulan data X API (Posts: Read).
+config.py - Semua konfigurasi pengumpulan data X API (Posts: Read).
 
 Letakkan di scripts/ berdampingan dengan 01_collect_data.py.
 Ubah bulan lewat CLI:  python scripts/01_collect_data.py --month 2025-11
@@ -20,6 +20,7 @@ DEFAULT_MONTH = "2025-10"                # bulan default bila --month tidak dibe
 ALLOWED_MONTHS = ("2025-10", "2026-09")  # rentang penelitian (inklusif), untuk validasi
 TARGET_PER_MONTH = 700
 LANG = "id"                              # operator X: lang:id (BUKAN "in")
+ACCEPTED_LANG_CODES = {"id", "in"}       # Operator query memakai "id", tetapi field `lang` di response X mengembalikan kode lama "in"
 SEED = 2026                              # seed tetap -> pembagian sel reproducible
 
 # ---------------------------------------------------------------------
@@ -42,7 +43,7 @@ CSV_COLUMNS = [
 # karena duplikat/kelebihan. Cek harga terbaru di Developer Console.
 # ---------------------------------------------------------------------
 PRICE_PER_POST = 0.005                   # USD per post read
-BUDGET_USD = 5.00                        # script berhenti sebelum melewati ini
+BUDGET_USD = 3.90                        # script berhenti sebelum melewati ini
 SPENT_BEFORE_USD = 0.0                   # pemakaian sebelumnya (bulan lain/uji coba), isi dari Console
 
 # ---------------------------------------------------------------------
@@ -51,7 +52,7 @@ SPENT_BEFORE_USD = 0.0                   # pemakaian sebelumnya (bulan lain/uji 
 RATE_WINDOW_SEC = 15 * 60
 MAX_REQ_PER_WINDOW = 250                 # margin aman di bawah 300
 MIN_GAP_SEC = 1.1                        # >1 detik antar request
-MAX_POSTS_PER_WINDOW = 100               # batas konservatif: 100 post / 15 menit (None = matikan)
+MAX_POSTS_PER_WINDOW = None              # # dimatikan: dokumentasi X hanya membatasi request (300/15 menit, 1/detik), bukan jumlah post
 
 BACKOFF_BASE_SEC = 2.0                   # exponential backoff: base * 2^n (+ jitter)
 BACKOFF_CAP_SEC = 300.0
@@ -88,15 +89,15 @@ DEDUP_NORMALIZED_TEXT = True             # buang post berteks sama setelah URL/m
 #                dan bagian sisa irisan dipakai sebagai cadangan (tanpa tumpang tindih)
 # ---------------------------------------------------------------------
 GROUPS = [
-    {"name": "demokratis", "share": 0.10, "cells": 4, "jitter_end": False,
+    {"name": "demokratis", "share": 0.10, "cells": None, "jitter_end": False,
      "query_terms": ["pola asuh demokratis", "authoritative parenting"]},
-    {"name": "lain", "share": 0.07, "cells": 4, "jitter_end": False,
+    {"name": "lain", "share": 0.07, "cells": None, "jitter_end": False,
      "query_terms": ["helicopter parenting", "attachment parenting", "intensive parenting"]},
-    {"name": "permisif", "share": 0.09, "cells": 4, "jitter_end": False,
+    {"name": "permisif", "share": 0.09, "cells": None, "jitter_end": False,
      "query_terms": ["pola asuh permisif", "permissive parenting", "terlalu memanjakan anak"]},
-    {"name": "otoriter", "share": 0.10, "cells": 4, "jitter_end": False,
+    {"name": "otoriter", "share": 0.10, "cells": None, "jitter_end": False,
      "query_terms": ["pola asuh otoriter", "authoritarian parenting", "strict parenting", "voc parenting"]},
-    {"name": "gentle", "share": 0.14, "cells": 4, "jitter_end": False,
+    {"name": "gentle", "share": 0.14, "cells": None, "jitter_end": False,
      "query_terms": ["gentle parenting", "positive parenting", "respectful parenting", "pola asuh lembut"]},
     {"name": "umum", "share": None, "cells": None, "jitter_end": True,
      "query_terms": ["pola asuh", "parenting"],
