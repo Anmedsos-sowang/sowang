@@ -1,0 +1,284 @@
+[23:35:55] Sel demokratis|2026-01-01T00:00:00Z|2026-01-05T10:17:08Z  target=10  (sudah 0)
+[23:35:56]   +0 (API kirim 0) | sel 0/10 | total 0/700 | ~$0.00 | req ke-1
+[23:35:56]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:35:56] Sel demokratis|2026-01-05T10:17:08Z|2026-01-09T20:34:17Z  target=10  (sudah 0)
+[23:35:57]   +0 (API kirim 0) | sel 0/10 | total 0/700 | ~$0.00 | req ke-2
+[23:35:57]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:35:57] Sel demokratis|2026-01-09T20:34:17Z|2026-01-14T06:51:25Z  target=10  (sudah 0)
+[23:35:58]   +0 (API kirim 0) | sel 0/10 | total 0/700 | ~$0.00 | req ke-3
+[23:35:58]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:35:58] Sel demokratis|2026-01-14T06:51:25Z|2026-01-18T17:08:34Z  target=10  (sudah 0)
+[23:36:00]   +1 (API kirim 1) | sel 1/10 | total 1/700 | ~$0.01 | req ke-4
+[23:36:01]   +0 (API kirim 0) | sel 1/10 | total 1/700 | ~$0.01 | req ke-5
+[23:36:01]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:01] Sel demokratis|2026-01-18T17:08:34Z|2026-01-23T03:25:42Z  target=10  (sudah 0)
+[23:36:02]   +1 (API kirim 1) | sel 1/10 | total 2/700 | ~$0.01 | req ke-6
+[23:36:03]   +0 (API kirim 0) | sel 1/10 | total 2/700 | ~$0.01 | req ke-7
+[23:36:03]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:03] Sel demokratis|2026-01-23T03:25:42Z|2026-01-27T13:42:51Z  target=10  (sudah 0)
+[23:36:05]   +0 (API kirim 0) | sel 0/10 | total 2/700 | ~$0.01 | req ke-8
+[23:36:05]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:36:05] Sel demokratis|2026-01-27T13:42:51Z|2026-02-01T00:00:00Z  target=10  (sudah 0)
+[23:36:06]   +0 (API kirim 0) | sel 0/10 | total 2/700 | ~$0.01 | req ke-9
+[23:36:07]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:36:07] Sel lain|2026-01-01T00:00:00Z|2026-01-08T18:00:00Z  target=13  (sudah 0)
+[23:36:08]   +0 (API kirim 0) | sel 0/13 | total 2/700 | ~$0.01 | req ke-10
+[23:36:08]   (kurang 13 post; sisanya diisi kelompok 'umum')
+[23:36:08] Sel lain|2026-01-08T18:00:00Z|2026-01-16T12:00:00Z  target=12  (sudah 0)
+[23:36:09]   +1 (API kirim 1) | sel 1/12 | total 3/700 | ~$0.01 | req ke-11
+[23:36:10]   +0 (API kirim 0) | sel 1/12 | total 3/700 | ~$0.01 | req ke-12
+[23:36:10]   (kurang 11 post; sisanya diisi kelompok 'umum')
+[23:36:10] Sel lain|2026-01-16T12:00:00Z|2026-01-24T06:00:00Z  target=12  (sudah 0)
+[23:36:12]   +1 (API kirim 1) | sel 1/12 | total 4/700 | ~$0.02 | req ke-13
+[23:36:13]   +0 (API kirim 0) | sel 1/12 | total 4/700 | ~$0.02 | req ke-14
+[23:36:13]   (kurang 11 post; sisanya diisi kelompok 'umum')
+[23:36:13] Sel lain|2026-01-24T06:00:00Z|2026-02-01T00:00:00Z  target=12  (sudah 0)
+[23:36:14]   +3 (API kirim 4) | sel 3/12 | total 7/700 | ~$0.04 | req ke-15
+[23:36:15]   +0 (API kirim 0) | sel 3/12 | total 7/700 | ~$0.04 | req ke-16
+[23:36:15]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:15] Sel permisif|2026-01-01T00:00:00Z|2026-01-06T04:00:00Z  target=11  (sudah 0)
+[23:36:16]   +2 (API kirim 2) | sel 2/11 | total 9/700 | ~$0.05 | req ke-17
+[23:36:17]   +0 (API kirim 0) | sel 2/11 | total 9/700 | ~$0.05 | req ke-18
+[23:36:17]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:17] Sel permisif|2026-01-06T04:00:00Z|2026-01-11T08:00:00Z  target=11  (sudah 0)
+[23:36:18]   +0 (API kirim 0) | sel 0/11 | total 9/700 | ~$0.05 | req ke-19
+[23:36:18]   (kurang 11 post; sisanya diisi kelompok 'umum')
+[23:36:18] Sel permisif|2026-01-11T08:00:00Z|2026-01-16T12:00:00Z  target=11  (sudah 0)
+[23:36:19]   +0 (API kirim 0) | sel 0/11 | total 9/700 | ~$0.05 | req ke-20
+[23:36:19]   (kurang 11 post; sisanya diisi kelompok 'umum')
+[23:36:19] Sel permisif|2026-01-16T12:00:00Z|2026-01-21T16:00:00Z  target=10  (sudah 0)
+[23:36:21]   +2 (API kirim 2) | sel 2/10 | total 11/700 | ~$0.06 | req ke-21
+[23:36:22]   +0 (API kirim 0) | sel 2/10 | total 11/700 | ~$0.06 | req ke-22
+[23:36:22]   (kurang 8 post; sisanya diisi kelompok 'umum')
+[23:36:22] Sel permisif|2026-01-21T16:00:00Z|2026-01-26T20:00:00Z  target=10  (sudah 0)
+[23:36:23]   +0 (API kirim 0) | sel 0/10 | total 11/700 | ~$0.06 | req ke-23
+[23:36:23]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:36:23] Sel permisif|2026-01-26T20:00:00Z|2026-02-01T00:00:00Z  target=10  (sudah 0)
+[23:36:24]   +1 (API kirim 1) | sel 1/10 | total 12/700 | ~$0.07 | req ke-24
+[23:36:26]   +0 (API kirim 0) | sel 1/10 | total 12/700 | ~$0.07 | req ke-25
+[23:36:26]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:26] Sel otoriter|2026-01-01T00:00:00Z|2026-01-05T10:17:08Z  target=10  (sudah 0)
+[23:36:27]   +5 (API kirim 5) | sel 5/10 | total 17/700 | ~$0.09 | req ke-26
+[23:36:28]   +0 (API kirim 0) | sel 5/10 | total 17/700 | ~$0.09 | req ke-27
+[23:36:28]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:28] Sel otoriter|2026-01-05T10:17:08Z|2026-01-09T20:34:17Z  target=10  (sudah 0)
+[23:36:29]   +4 (API kirim 4) | sel 4/10 | total 21/700 | ~$0.11 | req ke-28
+[23:36:32]   +0 (API kirim 0) | sel 4/10 | total 21/700 | ~$0.11 | req ke-29
+[23:36:32]   (kurang 6 post; sisanya diisi kelompok 'umum')
+[23:36:32] Sel otoriter|2026-01-09T20:34:17Z|2026-01-14T06:51:25Z  target=10  (sudah 0)
+[23:36:33]   +5 (API kirim 5) | sel 5/10 | total 26/700 | ~$0.14 | req ke-30
+[23:36:34]   +0 (API kirim 0) | sel 5/10 | total 26/700 | ~$0.14 | req ke-31
+[23:36:34]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:34] Sel otoriter|2026-01-14T06:51:25Z|2026-01-18T17:08:34Z  target=10  (sudah 0)
+[23:36:35]   +5 (API kirim 5) | sel 5/10 | total 31/700 | ~$0.16 | req ke-32
+[23:36:36]   +0 (API kirim 0) | sel 5/10 | total 31/700 | ~$0.16 | req ke-33
+[23:36:36]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:36] Sel otoriter|2026-01-18T17:08:34Z|2026-01-23T03:25:42Z  target=10  (sudah 0)
+[23:36:37]   +4 (API kirim 4) | sel 4/10 | total 35/700 | ~$0.18 | req ke-34
+[23:36:39]   +0 (API kirim 0) | sel 4/10 | total 35/700 | ~$0.18 | req ke-35
+[23:36:39]   (kurang 6 post; sisanya diisi kelompok 'umum')
+[23:36:39] Sel otoriter|2026-01-23T03:25:42Z|2026-01-27T13:42:51Z  target=10  (sudah 0)
+[23:36:40]   +1 (API kirim 1) | sel 1/10 | total 36/700 | ~$0.18 | req ke-36
+[23:36:41]   +0 (API kirim 0) | sel 1/10 | total 36/700 | ~$0.18 | req ke-37
+[23:36:41]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:41] Sel otoriter|2026-01-27T13:42:51Z|2026-02-01T00:00:00Z  target=10  (sudah 0)
+[23:36:42]   +5 (API kirim 5) | sel 5/10 | total 41/700 | ~$0.21 | req ke-38
+[23:36:43]   +0 (API kirim 0) | sel 5/10 | total 41/700 | ~$0.21 | req ke-39
+[23:36:43]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:43] Sel gentle|2026-01-01T00:00:00Z|2026-01-04T10:40:00Z  target=11  (sudah 0)
+[23:36:44]   +2 (API kirim 2) | sel 2/11 | total 43/700 | ~$0.22 | req ke-40
+[23:36:45]   +0 (API kirim 0) | sel 2/11 | total 43/700 | ~$0.22 | req ke-41
+[23:36:45]   (kurang 9 post; sisanya diisi kelompok 'umum')
+[23:36:45] Sel gentle|2026-01-04T10:40:00Z|2026-01-07T21:20:00Z  target=11  (sudah 0)
+[23:36:47]   +6 (API kirim 6) | sel 6/11 | total 49/700 | ~$0.25 | req ke-42
+[23:36:48]   +0 (API kirim 0) | sel 6/11 | total 49/700 | ~$0.25 | req ke-43
+[23:36:48]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:48] Sel gentle|2026-01-07T21:20:00Z|2026-01-11T08:00:00Z  target=11  (sudah 0)
+[23:36:49]   +8 (API kirim 8) | sel 8/11 | total 57/700 | ~$0.29 | req ke-44
+[23:36:50]   +0 (API kirim 0) | sel 8/11 | total 57/700 | ~$0.29 | req ke-45
+[23:36:50]   (kurang 3 post; sisanya diisi kelompok 'umum')
+[23:36:50] Sel gentle|2026-01-11T08:00:00Z|2026-01-14T18:40:00Z  target=11  (sudah 0)
+[23:36:51]   +4 (API kirim 4) | sel 4/11 | total 61/700 | ~$0.31 | req ke-46
+[23:36:52]   +0 (API kirim 0) | sel 4/11 | total 61/700 | ~$0.31 | req ke-47
+[23:36:52]   (kurang 7 post; sisanya diisi kelompok 'umum')
+[23:36:52] Sel gentle|2026-01-14T18:40:00Z|2026-01-18T05:20:00Z  target=11  (sudah 0)
+[23:36:53]   +4 (API kirim 4) | sel 4/11 | total 65/700 | ~$0.33 | req ke-48
+[23:36:55]   +0 (API kirim 0) | sel 4/11 | total 65/700 | ~$0.33 | req ke-49
+[23:36:55]   (kurang 7 post; sisanya diisi kelompok 'umum')
+[23:36:55] Sel gentle|2026-01-18T05:20:00Z|2026-01-21T16:00:00Z  target=11  (sudah 0)
+[23:36:56]   +6 (API kirim 6) | sel 6/11 | total 71/700 | ~$0.36 | req ke-50
+[23:36:57]   +0 (API kirim 0) | sel 6/11 | total 71/700 | ~$0.36 | req ke-51
+[23:36:57]   (kurang 5 post; sisanya diisi kelompok 'umum')
+[23:36:57] Sel gentle|2026-01-21T16:00:00Z|2026-01-25T02:40:00Z  target=11  (sudah 0)
+[23:36:58]   +7 (API kirim 7) | sel 7/11 | total 78/700 | ~$0.40 | req ke-52
+[23:37:00]   +0 (API kirim 0) | sel 7/11 | total 78/700 | ~$0.40 | req ke-53
+[23:37:00]   (kurang 4 post; sisanya diisi kelompok 'umum')
+[23:37:00] Sel gentle|2026-01-25T02:40:00Z|2026-01-28T13:20:00Z  target=11  (sudah 0)
+[23:37:01]   +8 (API kirim 8) | sel 8/11 | total 86/700 | ~$0.43 | req ke-54
+[23:37:02]   +0 (API kirim 0) | sel 8/11 | total 86/700 | ~$0.43 | req ke-55
+[23:37:02]   (kurang 3 post; sisanya diisi kelompok 'umum')
+[23:37:02] Sel gentle|2026-01-28T13:20:00Z|2026-02-01T00:00:00Z  target=10  (sudah 0)
+[23:37:03]   +8 (API kirim 8) | sel 8/10 | total 94/700 | ~$0.48 | req ke-56
+[23:37:04]   +0 (API kirim 0) | sel 8/10 | total 94/700 | ~$0.48 | req ke-57
+[23:37:04]   (kurang 2 post; sisanya diisi kelompok 'umum')
+[23:37:04] Kelompok spesifik terkumpul 94; target 'umum' = 606
+[23:37:04] Sel umum|2026-01-01T00:00:00Z|2026-01-01T06:56:32Z  target=11  (sudah 0)
+[23:37:05]   +9 (API kirim 9) | sel 9/11 | total 103/700 | ~$0.52 | req ke-58
+[23:37:06]   +10 (API kirim 10) | sel 19/11 | total 113/700 | ~$0.57 | req ke-59
+[23:37:06] Sel umum|2026-01-17T12:48:00Z|2026-01-17T19:09:35Z  target=10  (sudah 0)
+[23:37:08]   +8 (API kirim 9) | sel 8/10 | total 121/700 | ~$0.61 | req ke-60
+[23:37:09]   +9 (API kirim 9) | sel 17/10 | total 130/700 | ~$0.66 | req ke-61
+[23:37:09] Sel umum|2026-01-09T06:24:00Z|2026-01-09T17:42:50Z  target=10  (sudah 0)
+[23:37:10]   +10 (API kirim 10) | sel 10/10 | total 140/700 | ~$0.71 | req ke-62
+[23:37:10] Sel umum|2026-01-25T19:12:00Z|2026-01-26T04:20:09Z  target=10  (sudah 0)
+[23:37:11]   +7 (API kirim 7) | sel 7/10 | total 147/700 | ~$0.74 | req ke-63
+[23:37:13]   +5 (API kirim 5) | sel 12/10 | total 152/700 | ~$0.77 | req ke-64
+[23:37:13] Sel umum|2026-01-05T03:12:00Z|2026-01-05T12:17:37Z  target=10  (sudah 0)
+[23:37:14]   +10 (API kirim 10) | sel 10/10 | total 162/700 | ~$0.82 | req ke-65
+[23:37:14] Sel umum|2026-01-21T16:00:00Z|2026-01-22T01:40:56Z  target=10  (sudah 0)
+[23:37:15]   +8 (API kirim 8) | sel 8/10 | total 170/700 | ~$0.86 | req ke-66
+[23:37:17]   +9 (API kirim 9) | sel 17/10 | total 179/700 | ~$0.91 | req ke-67
+[23:37:17] Sel umum|2026-01-13T09:36:00Z|2026-01-13T17:57:39Z  target=10  (sudah 0)
+[23:37:18]   +10 (API kirim 10) | sel 10/10 | total 189/700 | ~$0.96 | req ke-68
+[23:37:18] Sel umum|2026-01-29T22:24:00Z|2026-01-30T05:31:55Z  target=10  (sudah 0)
+[23:37:20]   +9 (API kirim 9) | sel 9/10 | total 198/700 | ~$1.00 | req ke-69
+[23:37:22]   +1 (API kirim 1) | sel 10/10 | total 199/700 | ~$1.01 | req ke-70
+[23:37:22] Sel umum|2026-01-03T01:36:00Z|2026-01-03T09:19:31Z  target=11  (sudah 0)
+[23:37:24]   +11 (API kirim 11) | sel 11/11 | total 210/700 | ~$1.06 | req ke-71
+[23:37:24] Sel umum|2026-01-19T14:24:00Z|2026-01-20T01:17:48Z  target=10  (sudah 0)
+[23:37:26]   +10 (API kirim 10) | sel 10/10 | total 220/700 | ~$1.11 | req ke-72
+[23:37:26] Sel umum|2026-01-11T08:00:00Z|2026-01-11T19:43:00Z  target=10  (sudah 0)
+[23:37:27]   +9 (API kirim 9) | sel 9/10 | total 229/700 | ~$1.16 | req ke-73
+[23:37:28]   +10 (API kirim 10) | sel 19/10 | total 239/700 | ~$1.21 | req ke-74
+[23:37:28] Sel umum|2026-01-27T20:48:00Z|2026-01-28T07:07:57Z  target=10  (sudah 0)
+[23:37:30]   +9 (API kirim 9) | sel 9/10 | total 248/700 | ~$1.25 | req ke-75
+[23:37:31]   +10 (API kirim 10) | sel 19/10 | total 258/700 | ~$1.30 | req ke-76
+[23:37:31] Sel umum|2026-01-07T04:48:00Z|2026-01-07T12:13:42Z  target=10  (sudah 0)
+[23:37:32]   +8 (API kirim 8) | sel 8/10 | total 266/700 | ~$1.34 | req ke-77
+[23:37:34]   +7 (API kirim 7) | sel 15/10 | total 273/700 | ~$1.38 | req ke-78
+[23:37:34] Sel umum|2026-01-23T17:36:00Z|2026-01-24T04:58:24Z  target=10  (sudah 0)
+[23:37:35]   +10 (API kirim 10) | sel 10/10 | total 283/700 | ~$1.43 | req ke-79
+[23:37:35] Sel umum|2026-01-15T11:12:00Z|2026-01-15T20:27:32Z  target=10  (sudah 0)
+[23:37:36]   +6 (API kirim 7) | sel 6/10 | total 289/700 | ~$1.46 | req ke-80
+[23:37:37]   +10 (API kirim 10) | sel 16/10 | total 299/700 | ~$1.51 | req ke-81
+[23:37:37] Sel umum|2026-01-02T00:48:00Z|2026-01-02T08:15:27Z  target=11  (sudah 0)
+[23:37:39]   +8 (API kirim 8) | sel 8/11 | total 307/700 | ~$1.55 | req ke-82
+[23:37:40]   +9 (API kirim 9) | sel 17/11 | total 316/700 | ~$1.59 | req ke-83
+[23:37:40] Sel umum|2026-01-18T13:36:00Z|2026-01-18T20:28:12Z  target=10  (sudah 0)
+[23:37:41]   +9 (API kirim 9) | sel 9/10 | total 325/700 | ~$1.64 | req ke-84
+[23:37:42]   +3 (API kirim 4) | sel 12/10 | total 328/700 | ~$1.66 | req ke-85
+[23:37:42] Sel umum|2026-01-10T07:12:00Z|2026-01-10T18:14:20Z  target=10  (sudah 0)
+[23:37:44]   +10 (API kirim 10) | sel 10/10 | total 338/700 | ~$1.71 | req ke-86
+[23:37:44] Sel umum|2026-01-26T20:00:00Z|2026-01-27T04:50:15Z  target=10  (sudah 0)
+[23:37:45]   +9 (API kirim 9) | sel 9/10 | total 347/700 | ~$1.76 | req ke-87
+[23:37:47]   +10 (API kirim 10) | sel 19/10 | total 357/700 | ~$1.80 | req ke-88
+[23:37:47] Sel umum|2026-01-06T04:00:00Z|2026-01-06T13:04:34Z  target=10  (sudah 0)
+[23:37:48]   +9 (API kirim 9) | sel 9/10 | total 366/700 | ~$1.85 | req ke-89
+[23:37:49]   +10 (API kirim 10) | sel 19/10 | total 376/700 | ~$1.90 | req ke-90
+[23:37:49] Sel umum|2026-01-22T16:48:00Z|2026-01-23T02:48:57Z  target=10  (sudah 0)
+[23:37:50]   +8 (API kirim 9) | sel 8/10 | total 384/700 | ~$1.95 | req ke-91
+[23:37:51]   +7 (API kirim 8) | sel 15/10 | total 391/700 | ~$1.99 | req ke-92
+[23:37:51] Sel umum|2026-01-14T10:24:00Z|2026-01-14T19:00:01Z  target=10  (sudah 0)
+[23:37:52]   +9 (API kirim 9) | sel 9/10 | total 400/700 | ~$2.03 | req ke-93
+[23:37:53]   +9 (API kirim 9) | sel 18/10 | total 409/700 | ~$2.08 | req ke-94
+[23:37:53] Sel umum|2026-01-30T23:12:00Z|2026-01-31T10:26:57Z  target=10  (sudah 0)
+[23:37:54]   +10 (API kirim 10) | sel 10/10 | total 419/700 | ~$2.12 | req ke-95
+[23:37:54] Sel umum|2026-01-04T02:24:00Z|2026-01-04T14:13:03Z  target=10  (sudah 0)
+[23:37:55]   +9 (API kirim 9) | sel 9/10 | total 428/700 | ~$2.17 | req ke-96
+[23:37:57]   +8 (API kirim 8) | sel 17/10 | total 436/700 | ~$2.21 | req ke-97
+[23:37:57] Sel umum|2026-01-20T15:12:00Z|2026-01-20T22:32:10Z  target=10  (sudah 0)
+[23:37:58]   +10 (API kirim 10) | sel 10/10 | total 446/700 | ~$2.26 | req ke-98
+[23:37:58] Sel umum|2026-01-12T08:48:00Z|2026-01-12T20:05:07Z  target=10  (sudah 0)
+[23:37:59]   +10 (API kirim 10) | sel 10/10 | total 456/700 | ~$2.31 | req ke-99
+[23:37:59] Sel umum|2026-01-28T21:36:00Z|2026-01-29T07:01:51Z  target=10  (sudah 0)
+[23:38:00]   +9 (API kirim 9) | sel 9/10 | total 465/700 | ~$2.35 | req ke-100
+[23:38:01]   +9 (API kirim 9) | sel 18/10 | total 474/700 | ~$2.40 | req ke-101
+[23:38:01] Sel umum|2026-01-08T05:36:00Z|2026-01-08T15:51:00Z  target=10  (sudah 0)
+[23:38:02]   +9 (API kirim 9) | sel 9/10 | total 483/700 | ~$2.44 | req ke-102
+[23:38:03]   +10 (API kirim 10) | sel 19/10 | total 493/700 | ~$2.50 | req ke-103
+[23:38:03] Sel umum|2026-01-24T18:24:00Z|2026-01-25T04:04:46Z  target=10  (sudah 0)
+[23:38:04]   +10 (API kirim 10) | sel 10/10 | total 503/700 | ~$2.54 | req ke-104
+[23:38:04] Sel umum|2026-01-16T12:00:00Z|2026-01-16T23:24:50Z  target=10  (sudah 0)
+[23:38:05]   +9 (API kirim 9) | sel 9/10 | total 512/700 | ~$2.59 | req ke-105
+[23:38:06]   +10 (API kirim 10) | sel 19/10 | total 522/700 | ~$2.64 | req ke-106
+[23:38:06] Sel umum|2026-01-01T12:24:00Z|2026-01-01T21:43:43Z  target=11  (sudah 0)
+[23:38:08]   +10 (API kirim 10) | sel 10/11 | total 532/700 | ~$2.69 | req ke-107
+[23:38:09]   +9 (API kirim 9) | sel 19/11 | total 541/700 | ~$2.73 | req ke-108
+[23:38:09] Sel umum|2026-01-18T01:12:00Z|2026-01-18T12:51:04Z  target=10  (sudah 0)
+[23:38:10]   +10 (API kirim 10) | sel 10/10 | total 551/700 | ~$2.79 | req ke-109
+[23:38:10] Sel umum|2026-01-09T18:48:00Z|2026-01-10T01:50:34Z  target=10  (sudah 0)
+[23:38:12]   +9 (API kirim 9) | sel 9/10 | total 560/700 | ~$2.83 | req ke-110
+[23:38:14]   +6 (API kirim 6) | sel 15/10 | total 566/700 | ~$2.86 | req ke-111
+[23:38:14] Sel umum|2026-01-26T07:36:00Z|2026-01-26T19:40:53Z  target=10  (sudah 0)
+[23:38:16]   +4 (API kirim 4) | sel 4/10 | total 570/700 | ~$2.88 | req ke-112
+[23:38:17]   +2 (API kirim 2) | sel 6/10 | total 572/700 | ~$2.89 | req ke-113
+[23:38:18]   +10 (API kirim 10) | sel 16/10 | total 582/700 | ~$2.94 | req ke-114
+[23:38:18] Sel umum|2026-01-05T15:36:00Z|2026-01-06T01:16:01Z  target=10  (sudah 0)
+[23:38:19]   +9 (API kirim 9) | sel 9/10 | total 591/700 | ~$2.98 | req ke-115
+[23:38:20]   +10 (API kirim 10) | sel 19/10 | total 601/700 | ~$3.04 | req ke-116
+[23:38:20] Sel umum|2026-01-22T04:24:00Z|2026-01-22T13:20:55Z  target=10  (sudah 0)
+[23:38:21]   +7 (API kirim 8) | sel 7/10 | total 608/700 | ~$3.08 | req ke-117
+[23:38:22]   +10 (API kirim 10) | sel 17/10 | total 618/700 | ~$3.12 | req ke-118
+[23:38:22] Sel umum|2026-01-13T22:00:00Z|2026-01-14T05:17:47Z  target=10  (sudah 0)
+[23:38:24]   +10 (API kirim 10) | sel 10/10 | total 628/700 | ~$3.18 | req ke-119
+[23:38:24] Sel umum|2026-01-30T10:48:00Z|2026-01-30T23:01:52Z  target=10  (sudah 0)
+[23:38:25]   +8 (API kirim 8) | sel 8/10 | total 636/700 | ~$3.21 | req ke-120
+[23:38:27]   +6 (API kirim 6) | sel 14/10 | total 642/700 | ~$3.25 | req ke-121
+[23:38:27] Sel umum|2026-01-03T14:00:00Z|2026-01-03T22:54:45Z  target=11  (sudah 0)
+[23:38:28]   +11 (API kirim 11) | sel 11/11 | total 653/700 | ~$3.30 | req ke-122
+[23:38:28] Sel umum|2026-01-20T02:48:00Z|2026-01-20T14:53:57Z  target=10  (sudah 0)
+[23:38:29]   +8 (API kirim 8) | sel 8/10 | total 661/700 | ~$3.34 | req ke-123
+[23:38:30]   +8 (API kirim 8) | sel 16/10 | total 669/700 | ~$3.38 | req ke-124
+[23:38:30] Sel umum|2026-01-11T20:24:00Z|2026-01-12T03:41:34Z  target=10  (sudah 0)
+[23:38:31]   +10 (API kirim 10) | sel 10/10 | total 679/700 | ~$3.43 | req ke-125
+[23:38:31] Sel umum|2026-01-28T09:12:00Z|2026-01-28T18:21:45Z  target=10  (sudah 0)
+[23:38:32]   +9 (API kirim 9) | sel 9/10 | total 688/700 | ~$3.48 | req ke-126
+[23:38:33]   +5 (API kirim 7) | sel 14/10 | total 693/700 | ~$3.51 | req ke-127
+[23:38:33] Sel umum|2026-01-07T17:12:00Z|2026-01-08T05:31:32Z  target=10  (sudah 0)
+[23:38:34]   +7 (API kirim 9) | sel 7/10 | total 700/700 | ~$3.56 | req ke-128
+[23:38:34]   (kurang 3 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-24T06:00:00Z|2026-01-24T17:00:44Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-15T23:36:00Z|2026-01-16T10:19:30Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-02T13:12:00Z|2026-01-02T23:39:00Z  target=11  (sudah 0)
+[23:38:34]   (kurang 11 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-19T02:00:00Z|2026-01-19T09:57:48Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-10T19:36:00Z|2026-01-11T02:45:11Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-27T08:24:00Z|2026-01-27T18:12:38Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-06T16:24:00Z|2026-01-06T23:46:00Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-23T05:12:00Z|2026-01-23T15:51:01Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-14T22:48:00Z|2026-01-15T08:54:11Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-31T11:36:00Z|2026-01-31T17:48:26Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-04T14:48:00Z|2026-01-05T01:15:11Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-21T03:36:00Z|2026-01-21T14:54:57Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-12T21:12:00Z|2026-01-13T08:34:27Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-29T10:00:00Z|2026-01-29T18:21:11Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-08T18:00:00Z|2026-01-09T02:49:45Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-25T06:48:00Z|2026-01-25T18:19:50Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] Sel umum|2026-01-17T00:24:00Z|2026-01-17T10:03:14Z  target=10  (sudah 0)
+[23:38:34]   (kurang 10 post; sisanya diisi kelompok 'umum')
+[23:38:34] ID post disimpan di C:\Users\EMERENTIANA\Documents\Ica\Semester 7\Anmedsos\TK\TK2\sowang\data\post_ids_2026-01.csv
+[23:38:34] === SELESAI ===
+[23:38:34]   demokratis   2
+[23:38:34]   lain         5
+[23:38:34]   permisif     5
+[23:38:34]   otoriter     29
+[23:38:34]   gentle       53
+[23:38:34]   umum         606
+[23:38:34] Total unik: 700/700 | request sesi ini: 128
+[23:38:34] Ditolak: duplikat id=0, duplikat teks=9, bahasa lain=0
+[23:38:34] Post ditagih: 711 (~$3.56); cek biaya aktual di Developer Console.
