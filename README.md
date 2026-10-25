@@ -22,7 +22,7 @@ TK-Analisis-Parenting/
 │   ├── labeled/
 │   └── post_ids_YYYY-MM.csv      # ID post saja (boleh di-commit)
 ├── scripts/
-│   ├── collect_config.py         # semua konfigurasi pengumpulan data
+│   ├── config.py         # semua konfigurasi pengumpulan data
 │   └── 01_collect_data.py        # script pengambilan data
 ├── .env.example
 └── requirements.txt
@@ -51,13 +51,13 @@ python scripts/01_collect_data.py --dry-run       # lihat rencana query dan sel,
 python scripts/01_collect_data.py --smoke-test    # uji token dan query, 10 post (~$0.05)
 python scripts/01_collect_data.py                 # Oktober 2025, 700 post (default)
 python scripts/01_collect_data.py --month 2025-11 # bulan lain (rentang 2025-10 s/d 2026-09)
+
+python -u script/collect_data.py --month 2025-10 --yes | tee logs/run_2025-10.txt  # versi lengkap: sekaligus simpan log hasil run, tinggal ganti bulan & tahun
 ```
 
 Opsi lain: `--target N` (jumlah post), `--yes` (lewati konfirmasi `YA`).
 
 Jika proses terhenti (error, budget habis, Ctrl+C), jalankan perintah yang **sama** lagi. Script melanjutkan dari checkpoint.
-
-Perkiraan waktu: 1,5 sampai 2 jam per bulan karena batas 100 post per 15 menit.
 
 ## Strategi Pengumpulan
 
@@ -68,7 +68,7 @@ Perkiraan waktu: 1,5 sampai 2 jam per bulan karena batas 100 post per 15 menit.
 | Sebaran waktu | Bulan dipotong menjadi irisan waktu; kuota dibagi rata, jam akhir sel kelompok Umum diacak (seed tetap) |
 | Duplikasi | Dedup berdasarkan ID dan teks yang dinormalisasi (URL, mention, tanda baca dibuang) |
 | Kekurangan kuota | Kelompok langka yang kurang diisi oleh Umum, lalu oleh sisa irisan waktu yang belum dicari |
-| Rate limit | 1 request per 1,1 detik, 250 request per 15 menit, 100 post per 15 menit; saat 429 menunggu `Retry-After`, lalu `x-rate-limit-reset`, lalu exponential backoff dengan jitter |
+| Rate limit | 1 request per detik, 300 request per 15 menit per app; saat 429 menunggu `Retry-After`, lalu `x-rate-limit-reset`, lalu exponential backoff dengan jitter |
 | Biaya | $0,005 per post yang dikembalikan API; budget lokal `BUDGET_USD` (default $5,00) dan konfirmasi `YA` sebelum request berbayar |
 | Data minimal | Tanpa `expansions` (tidak ada tagihan user/media); tidak menyimpan author |
 
@@ -83,7 +83,7 @@ Perkiraan waktu: 1,5 sampai 2 jam per bulan karena batas 100 post per 15 menit.
 | Permisif | 63 | pola asuh permisif, permissive parenting, terlalu memanjakan anak | RQ2 |
 | Lain | 49 | helicopter parenting, attachment parenting, intensive parenting | RQ2 |
 
-Gunakan pembagian yang **sama** di semua bulan agar tren antar-bulan (RQ3) sebanding. Bila diubah, ubah `share` di `collect_config.py` untuk seluruh bulan.
+Gunakan pembagian yang **sama** di semua bulan agar tren antar-bulan (RQ3) sebanding. Bila diubah, ubah `share` di `config.py` untuk seluruh bulan.
 
 Urutan prioritas kelompok (dari yang pertama memiliki post): demokratis, lain, permisif, otoriter, gentle, umum.
 
