@@ -47,10 +47,10 @@ data/raw/
 Jalankan dari root repo.
 
 ```bash
-python scripts/01_collect_data.py --dry-run       # lihat rencana query dan sel, gratis
-python scripts/01_collect_data.py --smoke-test    # uji token dan query, 10 post (~$0.05)
-python scripts/01_collect_data.py                 # Oktober 2025, 700 post (default)
-python scripts/01_collect_data.py --month 2025-11 # bulan lain (rentang 2025-10 s/d 2026-09)
+python script/collect_data.py --dry-run       # lihat rencana query dan sel, gratis
+python script/collect_data.py --smoke-test    # uji token dan query, 10 post (~$0.05)
+python script/collect_data.py                 # Oktober 2025, 700 post (default)
+python script/collect_data.py --month 2025-11 # bulan lain (rentang 2025-10 s/d 2026-09)
 
 python -u script/collect_data.py --month 2025-10 --yes | tee logs/run_2025-10.txt  # versi lengkap: sekaligus simpan log hasil run, tinggal ganti bulan & tahun
 ```
