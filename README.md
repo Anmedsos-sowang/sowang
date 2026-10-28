@@ -10,21 +10,27 @@ Repo ini saat ini berisi tahap **pengumpulan data** dari X API v2 (Full-Archive 
 2. **RQ2** - Bagaimana sentimen pengguna pada topik-topik tersebut?
 3. **RQ3** - Bagaimana topik dan sentimen berubah dari waktu ke waktu?
 
-## Struktur Repo
+## Struktur Repository
 
 ```
-TK-Analisis-Parenting/
+sowang/
 ├── data/
-│   ├── raw/                      # data asli API (jangan diedit manual, di-gitignore)
-│   │   ├── posts_YYYY-MM.csv
-│   │   └── checkpoint_YYYY-MM.json
+│   ├── raw/   
+│   ├── intrerim/       
 │   ├── processed/
-│   ├── labeled/
-│   └── post_ids_YYYY-MM.csv      # ID post saja (boleh di-commit)
+│   ├── labeling/
+│   ├── external/  
+│   └── post_ids_YYYY-MM.csv     
+├── logs/
+├── notebook/
+│   ├── 01_prepare_data.ipynb
+│   ├── 02_labeling.ipynb
+│   ├── 03_preprocess_1_3.ipynb
+│   └── 03_preprocess_2.ipynb
 ├── scripts/
-│   ├── config.py         # semua konfigurasi pengumpulan data
-│   └── 01_collect_data.py        # script pengambilan data
-├── .env.example
+│   ├── config.py        
+│   └── collect_data.py        
+├── .gitignore
 └── requirements.txt
 ```
 
@@ -83,10 +89,6 @@ Jika proses terhenti (error, budget habis, Ctrl+C), jalankan perintah yang **sam
 | Permisif | 63 | pola asuh permisif, permissive parenting, terlalu memanjakan anak | RQ2 |
 | Lain | 49 | helicopter parenting, attachment parenting, intensive parenting | RQ2 |
 
-Gunakan pembagian yang **sama** di semua bulan agar tren antar-bulan (RQ3) sebanding. Bila diubah, ubah `share` di `config.py` untuk seluruh bulan.
-
-Urutan prioritas kelompok (dari yang pertama memiliki post): demokratis, lain, permisif, otoriter, gentle, umum.
-
 ## Kolom Data (`posts_YYYY-MM.csv`)
 
 | Kolom | Keterangan |
@@ -102,11 +104,24 @@ Urutan prioritas kelompok (dari yang pertama memiliki post): demokratis, lain, p
 | `like_count`, `reply_count`, `repost_count` | Metrik publik saat pengambilan |
 | `collected_at` | Waktu pengambilan data (UTC) |
 
-## Catatan dan Keterbatasan
+## Alur Pengolahan Data
 
-- Di dalam tiap sel waktu, API mengembalikan post terbaru lebih dulu, jadi sampel tidak sepenuhnya acak.
-- Post yang memuat frasa dari dua kelompok masuk ke kelompok dengan prioritas lebih awal.
-- Kelompok langka (mis. demokratis, permisif, lain) bisa kurang dari kuota pada bulan tertentu. Komposisi sebenarnya ada di log akhir dan kolom `group`.
-- Untuk topic modeling (RQ1), kelompok gaya sengaja diambil lebih banyak dari proporsi aslinya; laporkan juga hasil kelompok Umum saja sebagai pembanding.
-- Isi `SPENT_BEFORE_USD` di config dengan pemakaian terbaru dari Developer Console sebelum menjalankan bulan berikutnya.
-- Jangan commit data mentah; cukup bagikan `data/post_ids_YYYY-MM.csv`.
+Setelah data dikumpulkan melalui X API, data diolah secara bertahap menggunakan notebook di folder `notebook/`. Proses ini mencakup persiapan data, pelabelan relevansi topik parenting, dan preprocessing teks sebelum digunakan untuk analisis lebih lanjut.
+
+### Notebook
+
+Pengolahan data dilakukan menggunakan notebook Jupyter (.ipynb) di folder notebook/. Setiap notebook dijalankan seperti notebook Python pada umumnya, mengikuti urutan tahapan pengolahan data yang telah disusun.
+
+| Notebook | Deskripsi |
+|---|---|
+| `01_prepare_data.ipynb` | Menyiapkan dan memeriksa data hasil pengumpulan, termasuk pengecekan struktur data, duplikasi, dan kualitas data awal. |
+| `02_labeling.ipynb` | Melakukan pelabelan untuk mengidentifikasi post yang relevan dengan topik parenting dan membedakannya dari post yang tidak relevan. Pada tahap akhir, dilakukan labeling manual terhadap sampel data untuk memperoleh data berlabel yang dapat digunakan sebagai acuan evaluasi. |
+| `03_preprocess_1_3.ipynb` | Melakukan preprocessing teks untuk menyiapkan data bagi analisis pertanyaan penelitian 1 dan 3 terkait topic modeling dan temporal analysis. |
+| `03_preprocess_2.ipynb` | Melanjutkan preprocessing teks untuk pertanyaan penelitian 2 terkait analisis sentimen. |
+
+### Tahapan Pengolahan
+
+1. **Data validation and cleaning** — Memeriksa kualitas data, menangani duplikasi, dan membersihkan teks dari elemen yang tidak diperlukan, seperti URL, mention, atau karakter tertentu, sesuai kebutuhan analisis.
+2. **Labeling** — Mengidentifikasi relevansi post terhadap topik parenting. Post yang membahas pengasuhan secara substantif dipertahankan, sedangkan spam, promosi yang tidak relevan, penggunaan kata *parenting* secara nonliteral, dan konten lain yang tidak sesuai dapat dikeluarkan.
+3. **Text preprocessing** — Menormalisasi teks, melakukan tokenisasi, menghapus stopwords, dan melakukan stemming bahasa Indonesia jika diperlukan. Tahapan diterapkan sesuai kebutuhan model dan tujuan analisis.
+4. **Data siap analisis** — Menghasilkan data yang telah dibersihkan dan diproses untuk mendukung topic modeling (RQ1), analisis sentimen (RQ2), dan  analisis perubahan topik dan sentimen dari waktu ke waktu (RQ3).

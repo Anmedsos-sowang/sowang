@@ -6,3 +6,7 @@ __pycache__/
 !.env.example
 
 data/raw/
+data/interim/
+data/labeling/
+data/processed/
+data/external/
